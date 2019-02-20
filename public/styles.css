@@ -1,0 +1,9 @@
+#agentContact {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.homeValue{
+  display: flex;
+  align-self: flex-end;
+}

@@ -4,18 +4,32 @@
   <link rel="stylesheet" href="/styles.css">
   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/styled-components@4.1.3/dist/styled-components.min.js"></script>
+
   <title>Xillow</title>
 </header>
 
 <body>
+  <img src="./header.png">
+  <div id='photoCarousel'></div>
   <div id='agentContact'></div>
+  <div id='homeValue'></div>
+
+  <script src="http://localhost:3333/dist/bundle.js"></script>
   <script src="http://localhost:6969/bundle.js"></script>
-  <h1>test</h1>
+  <script src="http://localhost:3000/bundle.js"></script>
   <script>
-    ReactDOM.render(React.createElement(Info),
+    ReactDOM.render(React.createElement(AgentContact, { houseId: 100 }),
       document.getElementById('agentContact')
     );
-
+    ReactDOM.render(
+      React.createElement(PhotoCarousel, { id: 36 }, null),
+      document.getElementById('photoCarousel')
+    );
+    ReactDOM.render(
+      React.createElement(App),
+      document.getElementById('homeValue')
+    );
   </script>
 </body>
 
