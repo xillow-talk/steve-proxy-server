@@ -3,7 +3,26 @@
   flex-direction: row-reverse;
 }
 
-.homeValue{
+#homeValue{
+  /* align-self: flex-start; */
+}
+
+.sideBarContainer {
   display: flex;
-  align-self: flex-end;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+}
+
+.houseContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#nearbySimilar {
+  width: 310px;
+}
+#houseInfo {
+  width: 60%;
+  height: 60%;
 }
