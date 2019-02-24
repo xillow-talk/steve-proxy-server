@@ -1,28 +1,41 @@
-#agentContact {
+.allContent {
   display: flex;
   flex-direction: row-reverse;
-}
-
-#homeValue{
-  /* align-self: flex-start; */
+  justify-content: space-between;
 }
 
 .sideBarContainer {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 0;
+  margin-top: -30px;
+  background-color: white;
+  z-index: 2;
+}
+
+#agentContact {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+#nearbySimilar {
+  width: 310px;
 }
 
 .houseContainer{
   display: flex;
+  width: 60vw;
   flex-direction: column;
-  justify-content: flex-end;
+  margin-left: 14%;
+  align-content: center;
 }
-#nearbySimilar {
-  width: 310px;
+
+#homeValue{
+  /* align-self: flex-start; */
+
 }
-#houseInfo {
-  width: 60%;
-  height: 60%;
+
+
+#photoCarousel {
+  z-index: 0;
 }
